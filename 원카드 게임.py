@@ -29,7 +29,7 @@ bot_hand = []
 for _ in range(5):  
     card_num = random.randint(1, 12)  # 1~12 사이의 숫자 카드 생성
     card_shape = random.choice(shapes)  # 무늬 중 하나 무작위 선택
-    card_bomb = 'bomb' if random.random() <= 0.2 else ''  # 20% 확률로 폭탄 지정 (if 한 줄로 쓰는거 옛날에 친구한테 배워서 쓰는 겁니다. gpt아님)
+    card_bomb = 'bomb' if random.random() <= 0.2 else ''  # 20% 확률로 폭탄 지정 
     player_hand.append((card_num, card_shape, card_bomb))  # 생성된 카드를 튜플로 저장 후 플레이어 패에 추가
 
 # 봇에게도 똑같이 카드 5장을 랜덤으로 생성하여 줌
